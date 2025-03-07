@@ -1,0 +1,117 @@
+/* General Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1488D8;
+  padding: 10px 20px;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 2px -2px gray;
+  transition: background-color 0.3s ease;
+}
+
+/* Ensure content starts below navbar */
+body {
+  margin-top: 60px;
+}
+
+/* Logo Styling */
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Navigation links styling */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 50%;
+  align-items: center; /* This ensures vertical centering */
+}
+
+/* Styling for each navbar item */
+.nav-item {
+  margin: 0 15px;
+  position: relative;  /* This allows us to position the oval underneath */
+}
+
+/* Styling for the links */
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s;
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+
+/* Create a single oval shape under the navbar items */
+.nav-links::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;   /* Height of the oval */
+  background-color: #030391;
+  border-radius: 15px; /* Create the oval shape */
+  opacity: 0.5;  /* Slight transparency */
+  z-index: -1;   /* Make sure it's underneath the links */
+  transition: opacity 0.3s ease;  /* Smooth transition */
+}
+
+/* Show the oval when navbar is hovered */
+.navbar:hover .nav-links::before{
+  opacity: 1;  /* Make the oval fully visible when hovered */
+}
+
+/* Extra elements (user and bell icons) */
+.nav-extra {
+  display: flex;
+  align-items: center;
+  margin-right: 30px; /* Adjust the margin as needed */
+}
+
+.login-icon,
+.bell-icon {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: color 0.3s;
+}
+
+/* Hover effect for icons */
+.login-icon:hover,
+.bell-icon:hover {
+  color: #f0f0f069;
+}
+
+/* Bell container to position the notification badge */
+.bell-container {
+  position: relative;
+}
+
+/* Badge for notifications */
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 8px;
+  font-size: 10px;
+  font-weight: bold;
+}

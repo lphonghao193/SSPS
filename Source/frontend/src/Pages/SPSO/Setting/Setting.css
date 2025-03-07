@@ -1,0 +1,87 @@
+/* Thiết lập cho trang chính */
+.settings-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin-top: -150px;
+  }
+  
+  /* Form cài đặt */
+  .settings-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  /* Tiêu đề */
+  .settings-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Các nhóm input */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Nhãn của các input */
+  .form-group label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  /* Input số trang */
+  .form-group input[type="number"],
+  .form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Các lựa chọn định dạng tệp */
+  .file-formats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .file-formats label {
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+  
+  .file-formats input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Nút Lưu */
+  .save-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .save-button:hover {
+    background-color: #45a049;
+  }

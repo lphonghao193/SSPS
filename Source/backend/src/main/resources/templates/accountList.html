@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin and Student List</title>
+</head>
+
+<body>
+    <h1>Staff List</h1>
+    <ul id="staffList"></ul>
+
+    <h1>Student List</h1>
+    <ul id="studentList"></ul>
+
+    <script>
+        async function fetchAdmins() {
+            const response = await fetch('/ssps/admin/staffAccountList');
+            const adminList = await response.json();
+            const adminListElement = document.getElementById('staffList');
+
+            adminList.forEach(admin => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `Name: ${admin.name}, ID: ${admin.id}, Username: ${admin.username}, Email: ${admin.email}`;
+                adminListElement.appendChild(listItem);
+            });
+        }
+
+        async function fetchStudents() {
+            const response = await fetch('/ssps/admin/studentAccountList');
+            const studentList = await response.json();
+            const studentListElement = document.getElementById('studentList');
+
+            studentList.forEach(student => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `Name: ${student.studentName}, ID: ${student.studentID}, Username: ${student.username}, Email: ${student.studentEmail}`;
+                studentListElement.appendChild(listItem);
+            });
+        }
+
+        fetchAdmins();
+        fetchStudents();
+    </script>
+</body>
+
+</html>

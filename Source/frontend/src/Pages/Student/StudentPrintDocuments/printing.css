@@ -1,0 +1,77 @@
+.printing-background-container {
+    width: 70%;
+    min-height: 525px;
+    background-color: rgba(20, 136, 216, 0.25);
+    position: relative; 
+    left: 15%;
+    padding: 1% 5% 0 5%;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.upload-file-field {
+    text-align: center;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+}   
+
+.printing-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.printing-form-container select{
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
+.printing-form-container input[type=text]{
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
+.printing-form-container input[type=number]{
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
+.printing-printer {
+    width: 30%;
+    height: 150px
+}
+
+.printing-printer .printing-printer-right {
+    bottom: 0;
+    padding: 10px;
+    margin: 10px
+}
+
+table.Printing th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table.Printing td {
+    border: 1px solid black;
+    text-align: center;
+} 

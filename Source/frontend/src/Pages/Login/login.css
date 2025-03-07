@@ -1,0 +1,82 @@
+/* Style for the login page */
+.login-page.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+}
+
+/* Style for the login container */
+.login-container {
+    width: 800px;
+    /* Set the width to 800 pixels */
+    max-width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Style for the header */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Style for form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+    /* Changing text color to black */
+}
+
+/* Style for form input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    /* Adjust margin for consistent spacing */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for select dropdown */
+.selectLoginOption {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    /* Adjust margin for consistent spacing */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for the login button */
+button.confirm-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    /* Changing text color to black */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 36px;
+    /* Ensure spacing is consistent with inputs */
+}
+
+button.confirm-button:hover {
+    background-color: #218838;
+}
+
+/* Style for other buttons */
+button {
+    color: black;
+    /* Ensure all button text is black */
+}

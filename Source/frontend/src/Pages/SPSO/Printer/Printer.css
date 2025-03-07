@@ -1,0 +1,161 @@
+/* Container chính của trang cài đặt máy in */
+.printer-container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  /* Danh sách máy in */
+  .printer-list {
+    flex-grow: 1;
+  }
+  
+  .printer-list h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Nút "Dừng" */
+  button {
+    padding: 8px 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: darkred;
+  }
+/* Các phần khác trong Printer.css */
+
+/* Form thêm máy in */
+.add-printer-form {
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-printer-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-printer-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .add-printer-form input,
+  .add-printer-form select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .add-printer-form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .add-printer-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .add-printer-form button:last-child {
+    background-color: #f44336;
+  }
+  
+  .add-printer-form button:last-child:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Phần bên trái chứa các thẻ filter */
+  .filter-option {
+    margin-bottom: 15px;
+  }
+  
+  .filter-option button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #45a049;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filter-option button:hover {
+    background-color: #45a049;
+  }
+  
+  .printer-list {
+    padding: 20px;
+  }
+  
+  .printer-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .printer-list th, .printer-list td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .printer-list th {
+    background-color: #f2f2f2;
+  }
+  
+  .printer-list button {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .printer-list button:hover {
+    background-color: darkred;
+  }
+  

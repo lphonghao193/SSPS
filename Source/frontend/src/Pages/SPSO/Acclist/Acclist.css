@@ -1,0 +1,58 @@
+/* Acclist.css */
+.acclist-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.acclist-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.acclist-table th, .acclist-table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.acclist-table th {
+  background-color: #f4f4f4;
+}
+
+.view-btn {
+  padding: 6px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.view-btn:hover {
+  background-color: #45a049;
+}
+
+.add-account-btn {
+  margin-top: 20px;
+}
+
+.add-account-btn button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.add-account-btn button:hover {
+  background-color: #007b9c;
+}

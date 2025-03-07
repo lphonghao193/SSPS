@@ -1,0 +1,34 @@
+.home-page {
+    background-image: url("/slbktv.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+.home-service-card {
+    background-color: rgb(136, 136, 202);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 25%;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    border: none;
+    text-decoration: none;
+    color: black
+}
+
+.home-service-card:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+.home-hero {
+    padding: 30px;
+    min-height: calc(100vh - 135px);
+}

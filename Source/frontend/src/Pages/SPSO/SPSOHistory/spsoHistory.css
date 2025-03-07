@@ -1,0 +1,106 @@
+/* Container chính của trang lịch sử in */
+.history-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Tiêu đề trang */
+  .history-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Phần lọc ngày */
+  .date-filter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  
+  .date-filter input {
+    padding: 8px;
+    font-size: 14px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .date-filter button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .date-filter label {
+    padding: 8px 16px;
+  }
+
+  .date-filter button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Bảng lịch sử in */
+  .history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .history-table th, .history-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .history-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .history-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .history-title-table {
+    border-radius: 5px;
+    margin: 0 auto
+  }
+
+  .history-title-table  th {
+    border: 1px solid black;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .history-title-table button{
+    background: none;
+    border: none;
+  }
+
+  .history-title-table button.selected{
+    background: rgba(0, 0, 255, 0.3);
+    border: none;
+  }
+
+  .history-title-table button.notSelected:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+        .history-title-table button.notSelected:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    
+        button.selected,
+        button.notSelected {
+            color: black;
+        }

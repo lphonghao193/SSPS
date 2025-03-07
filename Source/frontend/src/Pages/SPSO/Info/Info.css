@@ -1,0 +1,102 @@
+/* Container chứa tất cả nội dung */
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Căn giữa các phần tử theo chiều ngang */
+    justify-content: flex-start;  /* Căn đầu trang theo chiều dọc */
+    min-height: 100vh;  /* Chiều cao tối thiểu là 100% chiều cao cửa sổ */
+    padding: 20px;
+    width: 100%;  /* Đảm bảo chiều rộng của container là 100% */
+    box-sizing: border-box;  /* Đảm bảo tính toán đúng kích thước */
+}
+
+/* Tiêu đề HỒ SƠ NGƯỜI DÙNG */
+.info-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;  /* Khoảng cách giữa tiêu đề và box thông tin */
+  text-align: center;   /* Căn giữa tiêu đề */
+  
+}
+
+/* Container chứa thông tin người dùng */
+.user-info {
+  display: flex;
+  justify-content: space-between;  /* Căn đều các phần tử trong container */
+  width: 100%;                    /* Đảm bảo container chiếm toàn bộ chiều rộng */
+  max-width: 900px;               /* Tạo chiều rộng tối đa cho box */
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 0 auto;                 /* Căn giữa box thông tin */
+}
+
+/* Cột bên trái: Biểu tượng người dùng và role */
+.user-left {
+  display: flex;
+  flex-direction: column;         /* Xếp theo chiều dọc */
+  align-items: center;            /* Căn giữa các phần tử trong cột */
+  justify-content: center;
+}
+
+/* Biểu tượng người dùng */
+.user-icon {
+  margin-bottom: 10px;
+  background-color: #4CAF50;
+  padding: 15px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+}
+
+/* Dòng "Role" */
+.user-role p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+  font-weight: 600;
+}
+
+/* Cột bên phải: Thông tin người dùng */
+.user-right {
+  display: flex;
+  flex-direction: column;         /* Xếp theo chiều dọc */
+  justify-content: center;
+  align-items: flex-start;        /* Căn lề trái */
+  margin-left: 20px;              /* Khoảng cách giữa hai cột */
+}
+
+.user-right h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.user-right p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.user-right strong {
+  font-weight: 600;
+}
+
+/* Nút đăng xuất */
+.logout-button {
+  background-color: red;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;  /* Đảm bảo nút Đăng xuất nằm giữa */
+}
+
+.logout-button:hover {
+  background-color: darkred;
+}
